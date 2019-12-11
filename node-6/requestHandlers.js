@@ -29,6 +29,7 @@ function show(response, request) {``
             response.write(error);
             response.end();
         } else {
+            // 图片的Content-Type属性不能加charset=UTF-8，它有独特的编码方式
             response.writeHead(200, { "Content-Type": "image/png" });
             response.write(file, "binary");
             response.end();

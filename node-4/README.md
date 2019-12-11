@@ -13,3 +13,7 @@ node index.js
 可以发现start页面会在10s后加载成功，而upload页面则无需等待。
 
 这是因为使用了child_process的exec函数创建了子进程，通过`多进程`来实现对多核CPU的利用，也就是`非阻塞`操作。
+
+## 拓展
+
+cluster模块（集群）
