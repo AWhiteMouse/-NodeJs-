@@ -1,7 +1,7 @@
 /**
  * 路由处理
  * 
- * @param {Object} handle 路由处理器
+ * @param {Object} handle 路由注册中心
  * @param {*} pathname 路径
  */
 function route(handle, pathname) {
