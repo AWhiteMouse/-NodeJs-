@@ -9,6 +9,7 @@ function start(route, handle) {
 
         request.setEncoding('utf8');
 
+        // 这里既可以用addListener也可以用on
         request.addListener('data', function (postDataChunk) {
             postData += postDataChunk;
         });

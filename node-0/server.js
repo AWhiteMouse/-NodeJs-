@@ -20,6 +20,7 @@ http.createServer(function (request, response) {
     //     pageDto: null,
     //     msg: '',
     // };
+    // 返回json数据时需要先将其转化为字符串
     // response.write(JSON.stringify(data));
 
     // 返回html
